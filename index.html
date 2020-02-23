@@ -1,77 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <!--[if IE 9 ]>    
+            <html class="ie9">
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+        <title>Reservas Hoteles</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="copyright" content="© 2020">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="description" content="Reserva Hoteles">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Vitor Carvalho">
 
-    <title>Reservas Hoteles</title>
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="main.css">
-</head>
+        <!--Favicon-->
+        <link rel="shortcut icon" href="">
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Reservas Hoteles</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 
-        <div class="user">
-            Usuario
-        </div>
-    </header>
+        <!--Font Awesome-->
 
-    <section>
-        <div class="login">
-            <form method="GET">
-                <div class="form-group">
-                    <label>Usuario:</label>
-                    <input type="text">
-                </div>
-                <div class="form-group">
-                    <label>Password:</label>
-                    <input type="password">
-                </div>
-                <div class="form-group">
-                    <input type="button" value="Send">
-                </div>
-            </form>
-        </div>
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="./main.css" type="text/css">
+    </head>
 
-        <aside>
-            <div class="box">
-                <div class="box-header">
+    <body>
+        <div class="container">
+            <div id="content-wrap">
+                <header>
+                    <div class="content">
+                        <div class="outer">
+                            <strong>
+                                <a href="#">
+                                    <img alt="logo" class="logo" src="./logo.png"  >
+                                </a>
+                            </strong>
+                        </div><!-- closing div outer -->
+                        
+                        <nav>
+                            <ul>
+                                <li><a href="#">Reservas Hoteles</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a id="user-link" href="#">Usuario</a></li>
+                            </ul>
+                        </nav>
+                    </div><!-- closing div content -->
+                </header>
 
-                </div>
-
-                <div class="box-body">
-                    <div class="get-div">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Wikipedia-logo-de.png" alt="wikipedia" width="200" height="250">
-                        <form method="get" action="https://en.wikipedia.org/w/index.php">
-                            <input type="text" name="search">
-                            <input type="submit">
+                <section>
+                    <div class="login">
+                        <form method="GET">
+                            <div class="form-group">
+                                <label>Usuario:</label>
+                                <input type="text">
+                            </div><!-- closing div form-group -->
+        
+                            <div class="form-group">
+                                <label>Password:</label>
+                                <input type="password">
+                            </div><!-- closing div form-group -->
+        
+                            <div class="form-group">
+                                <input type="button" value="Login">
+                            </div><!-- closing div form-group -->
                         </form>
-                    </div>
+                    </div><!-- closing div login -->
+                </section>
+        
+                <aside>
+                    <div class="box">
+                        <div class="box-header">
+        
+                        </div><!-- closing div box-header -->
+        
+                        <div class="box-body">
+                            <div class="get-div">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Wikipedia-logo-de.png" alt="wikipedia" width="200" height="250">
+                                <form method="get" action="https://en.wikipedia.org/w/index.php">
+                                    <input type="text" name="search">
+                                    <input type="submit"value="Wikipedia">
+                                </form>
+                            </div><!-- closing div get-div -->
+        
+                            <div class="get-div">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="google" width="200" height="100">
+                                <form action="http://www.google.com/search" method="get">
+                                    <input type="text" name="q" />
+                                    <input type="submit" value="Google" />
+                                </form>
+                            </div><!-- closing div get-div -->
+                        </div><!-- closing div box-body -->
+                    </div><!-- closing div box -->
+                </aside>
+            </div><!-- closing div content-wrap -->
 
-                    <div class="get-div">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="google" width="200" height="100">
-                        <form action="http://www.google.com/search" method="get">
-                            <input type="text" name="q" />
-                            <input type="submit" value="search" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </aside>
-    </section>
-
-    <footer>
-        All rights reserved. 2020
-    </footer>
-</body>
-
+            <footer>
+                All rights reserved. 2020
+            </footer>
+        </div><!-- closing div container  -->
+    </body>
 </html>
