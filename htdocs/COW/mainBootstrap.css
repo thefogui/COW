@@ -1,0 +1,117 @@
+#page-content {
+    flex: 1 0 auto;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+}
+
+div {
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    padding: 3px;
+}
+
+.opaqueDiv {
+    background-color: rgba(26,26,26,.85); /*whichever you want*/
+    opacity: 0.9;
+    filter:(opacity=90);
+    color: white;
+    font-size: 1.0em;
+}
+
+h3 {
+    color: white;
+    font-size: 1.2em;
+}
+
+.bg-image {
+    background-image: url("./img/bg.jpg");
+    background-size: 100% 100%;
+}
+
+input[type=submit] {
+    border-radius: 0%;
+    color: #444;
+    background-color: #55d6aa;
+}
+
+header {
+    background-color: #55d6aa;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.headerContent {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.outer {
+    float: left;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+}
+
+.logo:hover {
+    border-bottom: 2px solid #222;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-top: 25px;
+    margin-left: 70px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    /*font-family: 'Lobster', serif;*/
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li a:after {
+    content: '';
+    display: block;
+    margin-top: 5px;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
